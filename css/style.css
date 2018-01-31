@@ -1,0 +1,277 @@
+body{
+    width: 100%;
+    display: block;
+    position: absolute;
+    margin: 0px;
+}
+
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+p, h1{
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+p{
+    font-size: 16px;
+}
+
+.left,
+.right {
+    position: absolute;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+
+.blue{
+    background-color:#060637;
+    color: #fff;
+}
+
+.white{
+     color:#060637;
+     background-color: #fff;
+}
+
+.vertical-align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.row-flex-container > div{
+    margin: 0px 20px;
+}
+
+.header{
+     min-height: 50px;
+}
+
+.title{
+    width: 30%;
+}
+
+.nav-bar{
+    width: 70%;
+    text-align: right;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    padding: 0px 10px 10px 10px;
+    color: #060637;
+}
+
+.nav-bar a:hover{
+    border-bottom: 2px solid #060637;
+}
+
+.index-content{
+    width: 100%;
+    position: relative;
+    background: url(../images/bg1.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: #fff;
+    padding-top: 100px;
+}
+
+.middle{
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+    border: 2px outset #80808059;
+}
+
+.middle-content{
+     min-height: 500px;;
+     height: auto;
+     position: relative;
+     top: 0;
+     left: 0;   
+}
+
+#profile-image{
+     align-self: center;
+     margin: 0px;
+     width: 50%;
+     min-height: 500px;;
+    background: url(../images/pix2.jpeg) no-repeat center;
+     background-size: cover;
+}
+
+#profile-image img{
+    width: 100%;
+
+}
+
+#contact-detail{
+    width: 50%;
+}
+
+#contact-detail > div {
+    line-height: 10px;
+}
+
+#contact-detail .icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#contact-detail .icons img{
+    height: 30px;
+    width: 30px;
+    padding-right: 15px;
+}
+
+.middle-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: -50px;
+}
+
+.middle-footer img{
+    height: 20px;
+    width: 20px;
+    padding-right: 30px;
+}
+
+.middle-footer a{
+    text-decoration: none;
+}
+
+.index-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.index-footer p{
+    margin: 0px 20% 20px 20%;
+}
+
+.index-footer a{
+    text-decoration: none;
+    background-color: #060637;
+    color: #fff;
+    min-width: 50px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 10px;
+    border: solid grey 2px;
+}
+
+.index-footer a:hover{
+    color: #060637;
+    background-color: #fff;
+}
+
+.footer{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     background-color: #060637;
+     color: #fff;
+     margin-top: 50px;
+
+}
+
+@media screen and (min-width: 950px){
+    .middle {
+        width: 750px;
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    #profile-image {
+        width: 60%;
+    }
+
+    #contact-detail {
+        width: 40%;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    #contact-detail>div {
+        line-height: 20px;
+    }
+    
+    #contact-detail .icons {
+        flex-wrap: nowrap;
+    }
+
+    #contact-detail .icons p{
+        font-size: 14px;
+    }
+
+    .row-flex-container>div {
+        margin: 0px 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .row-flex-container {
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        width: auto;
+        text-align: center;
+        margin: 0px 8px 20px 8px !important;
+    }
+
+    .nav-bar a {
+        padding: 0px 5px 5px 5px;
+    }
+
+    .title{
+        width: auto;
+    }
+
+    #profile-image{
+        width: 80%;
+        margin: 40px 0px;
+    }
+
+    #contact-detail{
+        width: 80%;
+    }
+
+}
